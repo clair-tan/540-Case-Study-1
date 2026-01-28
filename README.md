@@ -60,8 +60,10 @@ Wave 2
   Bing    days 38    orders 0    rate 0.000 kits per day
 ```
 
-These rates match the manuscript pattern
+These rates match the manuscript pattern:
+
 Wave 1 shows similar ordering rates across the three sites in that wave and the manuscript reports no statistically significant differences across the Wave 1 platforms.
+
 Wave 2 shows a much higher ordering rate for Jackd compared with Instagram and Bing and the manuscript reports statistically significant differences across Wave 2 sites.
 
 A visualization of the estimated ordering rates is included in the repository as `output/bonus_figure_rates.png`.
@@ -71,10 +73,11 @@ A visualization of the estimated ordering rates is included in the repository as
 ### Secondary analysis
 The manuscript reports that test kit ordering was associated with responses to three HIV related belief items. I targeted those three items and reproduced the same p values pattern within rounding. The targeted variables are listed in `output/secondary_target_vars.csv`.
 
-Targeted items and replicated p values
-People would leave if I had HIV, p value about 0.04
-I think that new HIV or AIDS treatments can eradicate the virus from your body, p value about 0.03
-I could not be friends with someone who has HIV or AIDS, p value about 0.03
+Targeted items and replicated p values:
+
+- People would leave if I had HIV, p value about 0.04
+- I think that new HIV or AIDS treatments can eradicate the virus from your body, p value about 0.03
+- I could not be friends with someone who has HIV or AIDS, p value about 0.03
 
 ## Reflection
 Overall, the replication was successful for the required components. The per protocol cohort counts matched what we expected, and the site level ordering rates showed the same main pattern as the manuscript. In Wave 1, the estimated ordering rates were in a similar range across Facebook, Google, and Grindr. In Wave 2, Jackd had a much higher estimated ordering rate than Instagram and Bing, while Bing had zero orders.
