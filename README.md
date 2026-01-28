@@ -5,6 +5,11 @@ The replication covers three components from the manuscript: Table 1; Primary an
 
 The final dataset used for the replication is stored as `data/ctn_final.sas7bdat`. The main outputs are written to the `output` folder.
 
+## How to run
+
+Open the R script in the `code` folder and run it from top to bottom. The script reads the final dataset from `data/ctn_final.sas7bdat` and writes all replicated results to the `output` folder. The main files produced are `output/table1_replication.csv`, `output/primary_table2_replicated.csv`, and `output/secondary_pvalues_targeted.csv`.
+
+
 ## Study overview
 Online advertisements were placed on different kinds of platforms to encourage HIV self testing among young minority men who have sex with men who were at increased risk of HIV infection. The idea is that different online platforms reach different audiences, so the ordering rate of HIV self test kits may differ across platforms.
 
@@ -17,31 +22,41 @@ Below is the replicated Table 1 summary for the per protocol sample. The file is
 Age in years, median (IQR)    25 (21 to 27)
 Ethnicity, n (%)
   Hispanic/Latinx    66 (26.0)
+
 Race, n (%)
   American Indian or Alaskan Native    1 (0.4)
   Black or African American    196 (78.4)
   White    28 (11.2)
   Other    14 (5.6)
   Multiracial    11 (4.4)
+
 History of PrEP uptake, n (%)
   Never taken PrEP    232 (91.3)
   In the past 6 months    22 (8.7)
+
 Number of male sex partners in the past 90 days, median (IQR)    4 (3 to 6)
+
 Condom use, n (%)
   Never    36 (14.2)
   Sometimes    108 (42.5)
   About half the time    37 (14.6)
   Most of the time    68 (26.8)
   Always    5 (2.0)
+
 Condomless receptive anal sex in the past 90 days, n (%)    210 (82.7)
+
 Ever tested for HIV during lifetime, n (%)    191 (75.2)
+
 If tested for HIV, median (IQR)
   Months since last HIV test    11 (6 to 21)
+
 If not tested for HIV, n (%)    63 (24.8)
 ```
 
-A quick data check used during replication confirmed the cohort size and ordering count used in the primary outcome analysis
+A quick data check used during replication confirmed the cohort size and ordering count used in the primary outcome analysis:
+
 Per protocol sample size 254
+
 Number who ordered 177
 
 ## Replicated results
