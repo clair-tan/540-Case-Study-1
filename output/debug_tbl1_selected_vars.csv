@@ -1,0 +1,11 @@
+field,var
+age,q3_1
+ethnicity,q5_1
+race_raw,q5_3
+prep_history,q6_2
+partners90d,q11_2
+condom_use,q11_3
+condomless_ras,q11_4
+ever_tested,q11_5
+reason_not_tested,q11_7
+months_since_test,last_hiv_test_months
