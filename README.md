@@ -1,22 +1,16 @@
 # 540 Case Study 1
-
 This repository reproduces key results from the manuscript **Relative Effectiveness of Social Media, Dating Apps, and Information Search Sites in Promoting HIV Self testing** using the final dataset from the NIDA page and the accompanying data dictionary.
 
-The replication covers three components from the manuscript
-Table 1
-Primary analysis for the test kit ordering outcome
-Secondary analysis for selected survey items
+The replication covers three components from the manuscript: Table 1; Primary analysis for the test kit ordering outcome; and Secondary analysis for selected survey items.
 
 The final dataset used for the replication is stored as `data/ctn_final.sas7bdat`. The main outputs are written to the `output` folder.
 
 ## Study overview
-
 Online advertisements were placed on different kinds of platforms to encourage HIV self testing among young minority men who have sex with men who were at increased risk of HIV infection. The idea is that different online platforms reach different audiences, so the ordering rate of HIV self test kits may differ across platforms.
 
 The primary objective is to compare the effectiveness of specific platforms in promoting HIV self test kit ordering, using the test kit order rate as a proxy for effectiveness. The secondary objective is to assess whether participant characteristics and survey responses differ between people who ordered a test kit and people who did not order a test kit.
 
 ## Replicated Table 1
-
 Below is the replicated Table 1 summary for the per protocol sample. The file is saved as `output/table1_replication.csv`.
 
 ```
@@ -51,7 +45,6 @@ Per protocol sample size 254
 Number who ordered 177
 
 ## Replicated results
-
 ### Primary analysis
 
 The primary outcome is the HIV self test kit ordering rate, computed as number of orders divided by number of advertising days within each wave and site. The replicated counts and rates are saved as `output/primary_table2_replicated.csv`.
@@ -76,7 +69,6 @@ A visualization of the estimated ordering rates is included in the repository as
 
 
 ### Secondary analysis
-
 The manuscript reports that test kit ordering was associated with responses to three HIV related belief items. I targeted those three items and reproduced the same p values pattern within rounding. The targeted variables are listed in `output/secondary_target_vars.csv`.
 
 Targeted items and replicated p values
@@ -85,11 +77,14 @@ I think that new HIV or AIDS treatments can eradicate the virus from your body, 
 I could not be friends with someone who has HIV or AIDS, p value about 0.03
 
 ## Reflection
+Overall, the replication was successful for the required components. The per protocol cohort counts matched what we expected, and the site level ordering rates showed the same main pattern as the manuscript. In Wave 1, the estimated ordering rates were in a similar range across Facebook, Google, and Grindr. In Wave 2, Jackd had a much higher estimated ordering rate than Instagram and Bing, while Bing had zero orders.
 
-Overall, the replication was successful for the required components. The cohort counts and the site level ordering rates match the manuscript results, and the key secondary p values align with the reported values within small rounding differences. One practical challenge is that the primary outcome includes a site with zero orders in Wave 2, which can make some model based comparisons sensitive to the exact modeling and contrast implementation. In addition, the manuscript notes that a later promotion wave during the early public health emergency period was excluded from analysis because no participants enrolled and the model became inestimable, which is important context for why the replication focuses on the first two waves.
+For the secondary analysis, we targeted the three survey items highlighted in the manuscript and our results matched the reported conclusions. The main difference is small numerical rounding. In our output, the p values were 0.0339 for People would leave if I had HIV, 0.0290 for New HIV or AIDS treatments can eradicate virus, and 0.0312 for Could not be friends with someone with HIV or AIDS. The manuscript reports these p values as about 0.04, 0.03, and 0.03, so our results are slightly smaller but still very close and lead to the same interpretation.
+
+One practical challenge during replication is that Wave 2 includes a site with zero orders, which can make model based estimates and comparisons more sensitive to implementation details. Small differences can also come from rounding rules, how missing values are handled, and software defaults for contrasts and p value calculations. The manuscript also notes that a later promotion wave during the early public health emergency period was excluded because no participants enrolled and the model became inestimable, which helps explain why the replication focuses on the first two waves.
+
 
 ## References
-
 Stafylis C, Vavala G, Wang Q, et al. Relative Effectiveness of Social Media, Dating Apps, and Information Search Sites in Promoting HIV Self testing Observational Cohort Study. JMIR Formative Research. 2022.
 
 NIDA Clinical Trials Network data page for this case study and the final dataset with data dictionary
